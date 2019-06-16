@@ -1,12 +1,13 @@
 #Navigation {
 	height: 240px;
-	width: 10%;
+	width: 15%;
 	background-color:  #FF851B;
 	float:left;
 }
 #main {width:1100px;
 float: right;
 color: black;
+	background-color: #C0C0C0;
 }
 #ver {
 	height: 50px;
