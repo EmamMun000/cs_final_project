@@ -1,0 +1,25 @@
+#Navigation {
+	height: 240px;
+	width: 10%;
+	background-color:  #FF851B;
+	float:left;
+}
+#main {width:1500px;
+float: right;
+color: black;
+}
+#ver {
+	height: 50px;
+	width:800px;
+background-color: #FFDC00
+}
+#second {
+	background-color: #00E5EE;
+	height:200;
+	width:1500;
+}
+#third {
+	width: 1500;
+	height: 200;
+	background-color: #00E5EE;
+}
