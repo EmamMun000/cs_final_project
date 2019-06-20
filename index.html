@@ -8,7 +8,9 @@
       <h3><ul><a href="#link1">CSS</a></ul>  
         <ul> <a href="#link2">HTML</a> </ul>
         <ul><a href="#link3">Processing</a></ul>
-        <ul><a href="#link4">Binary</a></ul> </h3> </div>
+        <ul><a href="#link4">Binary</a></ul> </h3> 
+    
+      </div>
    <div id="main"> <h3> 1969-70, The Arpanet </h3>
    <pre>              <font size="3" face="helvetica">The internet is an fairly recent invention that has changed the world. In 1969 Arpanet was created, the first real 
 network which used packet switching technology,its first message which was sent between the computers at Stanford and UCLA was the word "Login". <br/>Then a year later,
@@ -204,10 +206,46 @@ Hexadecimal is a base-16 number system. That means there are 16 possible digits 
  </table>
 </font>
         
-      </pre>
+
+
+
+<div class="comment">
+<textarea id="title" type="text "rows="2" cols="4" onkeyup="Allow()" placeholder="write a comment......"></textarea>
+<input type="submit" value="Post" onclick="insert()" style="width:76px;" /></form>
+</div>
+<div id="display"></div>
+<script type="text/javascript">
+var titles = [];
+var titleInput = document.getElementById("title");
+var messageBox = document.getElementById("display");
+function Allow()
+{
+if (!user.title.value.match(/[a-zA-Z]$/) && user.title.value !="")
+{
+user.title.value="";
+alert("Please Enter only alphabets");
+}
+window.location.reload()
+}
+function insert () {
+titles.push(titleInput.value);
+clearAndShow();
+}
+function clearAndShow ()
+{
+titleInput.value = "";
+messageBox.innerHTML = "";
+messageBox.innerHTML += " " + titles.join("<br/> ") + "<br/>";
+}
+</script>
+            </pre>
    </div>
  </pre>
+
+
 </div>
+
+
 
 </pre>
 
@@ -216,6 +254,10 @@ Hexadecimal is a base-16 number system. That means there are 16 possible digits 
 
   </body>
 </html>
+
+
+
+
 
 
 
